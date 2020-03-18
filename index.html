@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 1920(设计稿) = 80(基准值) * 24(划分的份数) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <style>
+        @media screen and (max-width: 1024px) {
+            html {
+                font-size: 42.66px !important;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            html {
+                font-size: 80px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="viewport">
+        <div class="column">
+            <div class="panel">1</div>
+        </div>
+        <div class="column">2</div>
+        <div class="column">3</div>
+    </div>
+</body>
+
+</html>

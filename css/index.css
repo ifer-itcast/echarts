@@ -1,0 +1,42 @@
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #e33333;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat 0 0 / cover;
+    /* background-size: cover; */
+}
+
+.viewport {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../images/logo.png) no-repeat 0 0 / contain;
+    min-height: 780px;
+    padding: 1.1rem .25rem 0;
+}
+
+.viewport .column {
+    flex: 3;
+}
+.viewport .column:nth-child(2) {
+    flex: 4;
+}
+
+/* border-image-source: 边框的图片路径 */
+/* border-image-slice: 图片边框向内偏移，无单位 */
+/* border-image-width: 图片边框的宽度（边框图片的宽度不是边框的宽度），有单位 */
+/* border-image-repeat: 是否平铺，默认 stretch 拉伸 */
+
+/* 公共面板样式 */
+.panel {
+    border-width: .6375rem .475rem .25rem 1.65rem;
+    border-style: solid;
+    border-image-source: url(../images/border.png);
+    border-image-slice: 51 38 20 132;
+}
