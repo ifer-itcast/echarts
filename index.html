@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="fonts/icomoon.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- 1920(设计稿) = 80(基准值) * 24(划分的份数) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/echarts.min.js"></script>
     <script src="js/flexible.js"></script>
-    <style>
-        @media screen and (max-width: 1024px) {
-            html {
-                font-size: 42.66px !important;
-            }
-        }
-
-        @media screen and (min-width: 1920px) {
-            html {
-                font-size: 80px !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div class="viewport">
         <div class="column">
-            <div class="panel">
-                <div class="inner">hello</div>
+            <div class="panel overview">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <h4>2190</h4>
+                            <span><i class="icon-dot" style="color: #4c9bfd;"></i>设备总数</span>
+                        </li>
+                        <li>
+                            <h4>2190</h4>
+                            <span><i class="icon-dot" style="color: #6acca3;"></i>季度新增</span>
+                        </li>
+                        <li>
+                            <h4>2190</h4>
+                            <span><i class="icon-dot" style="color: #6acca3;"></i>运营设备</span>
+                        </li>
+                        <li>
+                            <h4>2190</h4>
+                            <span><i class="icon-dot" style="color: #ed3f35;"></i>异常设备</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="column">2</div>

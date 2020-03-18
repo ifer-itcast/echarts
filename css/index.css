@@ -2,13 +2,30 @@ a {
     color: #666;
     text-decoration: none;
 }
+
 a:hover {
     color: #e33333;
+}
+
+h4 {
+    font-weight: normal;
 }
 
 body {
     background: url(../images/bg.jpg) no-repeat 0 0 / cover;
     /* background-size: cover; */
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 42.66px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 80px !important;
+    }
 }
 
 .viewport {
@@ -24,6 +41,7 @@ body {
 .viewport .column {
     flex: 3;
 }
+
 .viewport .column:nth-child(2) {
     flex: 4;
 }
@@ -50,5 +68,24 @@ body {
     bottom: -.25rem;
     left: -1.65rem;
     padding: .3rem .45rem;
+}
+
+.overview {
+    height: 1.375rem;
+}
+
+.overview ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview ul li h4 {
+    font-size: .35rem;
     color: #fff;
+    margin: 0 0 .1rem .06rem;
+}
+
+.overview ul li span {
+    font-size: .2rem;
+    color: #4c9bfd;
 }
